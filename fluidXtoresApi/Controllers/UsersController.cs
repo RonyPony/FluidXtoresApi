@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using fluidXtoresApi.Models;
+using fluidXtoresApi.dto;
 
 namespace fluidXtoresApi.Controllers
 {
@@ -14,9 +15,9 @@ namespace fluidXtoresApi.Controllers
     [ApiController]
     public class UsersController : ControllerBase
     {
-        private readonly userContext _context;
+        private readonly fluidContext _context;
 
-        public UsersController(userContext context)
+        public UsersController(fluidContext context)
         {
             _context = context;
         }
@@ -78,10 +79,40 @@ namespace fluidXtoresApi.Controllers
         [HttpPost]
         public async Task<ActionResult<User>> PostUser(User user)
         {
+            user.LastLoginDate = DateTime.Now;
+            user.UserRegisterDate = DateTime.Now;
             _context.Users.Add(user);
             await _context.SaveChangesAsync();
 
             return CreatedAtAction(nameof(GetUser), new { id = user.UserId }, user);
+        }
+
+        // POST: api/LoginUser
+        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
+        [HttpPost("login")]
+        public async Task<ActionResult<User>> LoginUser(loginUserDto user)
+        {
+            if (user==null)
+            {
+                return BadRequest();
+            }
+            var userInfo =  _context.Users.Where(b => b.UserEmail == user.UserEmail).FirstOrDefault();
+            if (userInfo == null)
+            {
+                return NotFound(user.UserEmail+" does not exist");
+            }
+            if (userInfo.UserPassword == user.UserPassword)
+            {
+                userInfo.LastLoginDate = DateTime.Now;
+                _context.Users.Add(userInfo);
+                await _context.SaveChangesAsync();
+                return Ok(userInfo);
+            }
+            else
+            {
+                return Unauthorized("Login failed, please check your credentials");
+            }
+            
         }
 
         // DELETE: api/Users/5

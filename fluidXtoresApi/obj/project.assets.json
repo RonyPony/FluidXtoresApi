@@ -9651,11 +9651,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\proyectos\\FluidXtores-WooCommerce\\api\\fluidXtoresApi\\fluidXtoresApi\\fluidXtoresApi.csproj",
+      "projectUniqueName": "C:\\proyectos\\FluidXtoresApi\\fluidXtoresApi\\fluidXtoresApi.csproj",
       "projectName": "fluidXtoresApi",
-      "projectPath": "C:\\proyectos\\FluidXtores-WooCommerce\\api\\fluidXtoresApi\\fluidXtoresApi\\fluidXtoresApi.csproj",
+      "projectPath": "C:\\proyectos\\FluidXtoresApi\\fluidXtoresApi\\fluidXtoresApi.csproj",
       "packagesPath": "C:\\Users\\ronel\\.nuget\\packages\\",
-      "outputPath": "C:\\proyectos\\FluidXtores-WooCommerce\\api\\fluidXtoresApi\\fluidXtoresApi\\obj\\",
+      "outputPath": "C:\\proyectos\\FluidXtoresApi\\fluidXtoresApi\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
