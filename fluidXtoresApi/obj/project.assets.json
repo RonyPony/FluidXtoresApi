@@ -9645,30 +9645,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\ronel\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "/Users/ingcruz/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\proyectos\\FluidXtoresApi\\fluidXtoresApi\\fluidXtoresApi.csproj",
+      "projectUniqueName": "/Users/ingcruz/proyectos/FluidXtoresApi/fluidXtoresApi/fluidXtoresApi.csproj",
       "projectName": "fluidXtoresApi",
-      "projectPath": "C:\\proyectos\\FluidXtoresApi\\fluidXtoresApi\\fluidXtoresApi.csproj",
-      "packagesPath": "C:\\Users\\ronel\\.nuget\\packages\\",
-      "outputPath": "C:\\proyectos\\FluidXtoresApi\\fluidXtoresApi\\obj\\",
+      "projectPath": "/Users/ingcruz/proyectos/FluidXtoresApi/fluidXtoresApi/fluidXtoresApi.csproj",
+      "packagesPath": "/Users/ingcruz/.nuget/packages/",
+      "outputPath": "/Users/ingcruz/proyectos/FluidXtoresApi/fluidXtoresApi/obj/",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
-        "C:\\Users\\ronel\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/Users/ingcruz/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -9728,7 +9722,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.300/RuntimeIdentifierGraph.json"
       }
     }
   }
