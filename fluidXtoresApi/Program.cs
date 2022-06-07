@@ -46,6 +46,8 @@ if (app.Environment.IsProduction())
             var exceptionHandlerPathFeature =
                 context.Features.Get<IExceptionHandlerPathFeature>();
 
+            await context.Response.WriteAsync(exceptionHandlerPathFeature.Error.Message);
+
             if (exceptionHandlerPathFeature?.Error is FileNotFoundException)
             {
                 await context.Response.WriteAsync(" The file was not found.");
