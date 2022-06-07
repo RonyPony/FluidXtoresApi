@@ -18,15 +18,23 @@ builder.Services.AddSwaggerGen();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
-//if (app.Environment.IsDevelopment())
-//{
-//    app.UseSwagger();
-//    app.UseSwaggerUI();
-//}
+if (app.Environment.IsDevelopment())
+{
+    app.UseSwagger();
+    app.UseSwaggerUI();
+}
 
-//tmp configuration
-app.UseSwagger();
-app.UseSwaggerUI();
+if (app.Environment.IsProduction())
+{
+
+    //tmp configuration
+    app.UseSwagger();
+    app.UseSwaggerUI();
+    app.UseExceptionHandler("/Error");
+    app.UseHsts();
+
+}
+
 
 app.UseHttpsRedirection();
 
