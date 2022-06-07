@@ -1,13 +1,8 @@
 ﻿<Properties StartupConfiguration="{B97989FB-2D1D-4C6B-B81B-713FD335E4A5}|Default">
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workbench ActiveDocument="fluidXtoresApi/appsettings.json">
+  <MonoDevelop.Ide.Workbench ActiveDocument="fluidXtoresApi/Controllers/UsersController.cs">
     <Files>
       <File FileName="../../../../usr/local/share/dotnet/sdk/6.0.300/Sdks/Microsoft.NET.Sdk/targets/Microsoft.PackageDependencyResolution.targets" Line="259" Column="1" />
-      <File FileName="fluidXtoresApi/Controllers/UsersController.cs" Line="1" Column="1" />
-      <File FileName="fluidXtoresApi/appsettings.json" Line="6" Column="5" />
+      <File FileName="fluidXtoresApi/Controllers/UsersController.cs" Line="25" Column="22" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -15,7 +10,6 @@
           <Node name="fluidXtoresApi" expanded="True">
             <Node name="fluidXtoresApi" expanded="True">
               <Node name="Controllers" expanded="True" />
-              <Node name="appsettings.json" selected="True" />
             </Node>
           </Node>
         </State>
@@ -25,7 +19,11 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.ItemProperties.fluidXtoresApi PreferredExecutionTarget="/Applications/Safari.app" />
 </Properties>
