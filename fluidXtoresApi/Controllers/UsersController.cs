@@ -115,6 +115,19 @@ namespace fluidXtoresApi.Controllers
             
         }
 
+        // GET: api/Users/email
+        [HttpGet("find/{email}")]
+        public async Task<IActionResult> getUserByEmail(string email)
+        {
+            var user =  _context.Users.Where(x => x.UserEmail.Equals(email));
+
+            if (user == null)
+            {
+                return NotFound();
+            }
+            return Ok(user);
+        }
+
         // DELETE: api/Users/5
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteUser(long id)
