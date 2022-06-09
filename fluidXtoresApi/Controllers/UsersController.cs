@@ -116,8 +116,8 @@ namespace fluidXtoresApi.Controllers
         }
 
         // GET: api/Users/email
-        [HttpGet("find/{email}")]
-        public async Task<IActionResult> getUserByEmail(string email)
+        [HttpGet("find")]
+        public async Task<IActionResult> getUserByEmail([FromQuery(Name = "email")] string email)
         {
             var user =  _context.Users.Where(x => x.UserEmail.Equals(email));
 
