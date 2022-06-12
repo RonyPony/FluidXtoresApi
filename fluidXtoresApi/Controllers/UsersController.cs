@@ -92,27 +92,36 @@ namespace fluidXtoresApi.Controllers
         [HttpPost("login")]
         public async Task<ActionResult<User>> LoginUser(loginUserDto user)
         {
-            if (user==null)
+            try
             {
-                return BadRequest();
+                if (user == null)
+                {
+                    return BadRequest();
+                }
+                var userInfo = _context.Users.Where(b => b.UserEmail == user.UserEmail).FirstOrDefault();
+                userDto usr = new userDto() { UserName=userInfo.UserName,UserEmail=userInfo.UserEmail,UserPassword=userInfo.UserPassword,LastLoginDate=userInfo.LastLoginDate,UserRegisterDate=userInfo.UserRegisterDate};
+                if (userInfo == null)
+                {
+                    return NotFound(user.UserEmail + " does not exist");
+                }
+                if (userInfo.UserPassword == user.UserPassword)
+                {
+                    userInfo.LastLoginDate = DateTime.Now;
+
+                    _context.Users.Update(userInfo);
+                    await _context.SaveChangesAsync();
+                    //_context.SaveChanges();
+                    return Ok(userInfo);
+                }
+                else
+                {
+                    return Unauthorized("Login failed, please check your credentials");
+                }
             }
-            var userInfo =  _context.Users.Where(b => b.UserEmail == user.UserEmail).FirstOrDefault();
-            if (userInfo == null)
+            catch (Exception ex)
             {
-                return NotFound(user.UserEmail+" does not exist");
-            }
-            if (userInfo.UserPassword == user.UserPassword)
-            {
-                userInfo.LastLoginDate = DateTime.Now;
-                _context.Users.Add(userInfo);
-                await _context.SaveChangesAsync();
-                return Ok(userInfo);
-            }
-            else
-            {
-                return Unauthorized("Login failed, please check your credentials");
-            }
-            
+                return StatusCode(StatusCodes.Status500InternalServerError, ex);
+            } 
         }
 
         // GET: api/Users/email

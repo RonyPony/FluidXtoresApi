@@ -5,7 +5,8 @@ namespace fluidXtoresApi.Models
 {
     public class User
     {
-        [Key][DatabaseGeneratedAttribute(DatabaseGeneratedOption.Identity)]
+        //[DatabaseGeneratedAttribute(DatabaseGeneratedOption.Identity)]
+        [Key]
         public long UserId { get; set; }
         public string UserName { get; set; }
         public string UserEmail { get; set; }

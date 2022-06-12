@@ -9645,19 +9645,19 @@
     ]
   },
   "packageFolders": {
-    "/Users/ingcruz/.nuget/packages/": {}
+    "/Users/ronel/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/ingcruz/proyectos/FluidXtoresApi/fluidXtoresApi/fluidXtoresApi.csproj",
+      "projectUniqueName": "/Users/ronel/Documents/proyectos/FluidXtoresApi/fluidXtoresApi/fluidXtoresApi.csproj",
       "projectName": "fluidXtoresApi",
-      "projectPath": "/Users/ingcruz/proyectos/FluidXtoresApi/fluidXtoresApi/fluidXtoresApi.csproj",
-      "packagesPath": "/Users/ingcruz/.nuget/packages/",
-      "outputPath": "/Users/ingcruz/proyectos/FluidXtoresApi/fluidXtoresApi/obj/",
+      "projectPath": "/Users/ronel/Documents/proyectos/FluidXtoresApi/fluidXtoresApi/fluidXtoresApi.csproj",
+      "packagesPath": "/Users/ronel/.nuget/packages/",
+      "outputPath": "/Users/ronel/Documents/proyectos/FluidXtoresApi/fluidXtoresApi/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/ingcruz/.nuget/NuGet/NuGet.Config"
+        "/Users/ronel/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
