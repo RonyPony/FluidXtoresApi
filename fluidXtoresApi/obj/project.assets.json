@@ -9645,19 +9645,19 @@
     ]
   },
   "packageFolders": {
-    "/Users/ronel/.nuget/packages/": {}
+    "/Users/rony/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/ronel/Documents/proyectos/FluidXtoresApi/fluidXtoresApi/fluidXtoresApi.csproj",
+      "projectUniqueName": "/Users/rony/projects/FluidXtoresApi/fluidXtoresApi/fluidXtoresApi.csproj",
       "projectName": "fluidXtoresApi",
-      "projectPath": "/Users/ronel/Documents/proyectos/FluidXtoresApi/fluidXtoresApi/fluidXtoresApi.csproj",
-      "packagesPath": "/Users/ronel/.nuget/packages/",
-      "outputPath": "/Users/ronel/Documents/proyectos/FluidXtoresApi/fluidXtoresApi/obj/",
+      "projectPath": "/Users/rony/projects/FluidXtoresApi/fluidXtoresApi/fluidXtoresApi.csproj",
+      "packagesPath": "/Users/rony/.nuget/packages/",
+      "outputPath": "/Users/rony/projects/FluidXtoresApi/fluidXtoresApi/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/ronel/.nuget/NuGet/NuGet.Config"
+        "/Users/rony/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
@@ -9722,7 +9722,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.300/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.302/RuntimeIdentifierGraph.json"
       }
     }
   }
