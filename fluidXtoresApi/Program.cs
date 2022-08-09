@@ -8,7 +8,7 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 
 builder.Services.AddControllers();
-
+builder.Services.AddCors();
 builder.Services.AddDbContext<fluidContext>(opt =>
 {
     //opt.UseInMemoryDatabase("users");
@@ -27,8 +27,8 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-if (app.Environment.IsProduction())
-{
+//if (app.Environment.IsProduction())
+//{
 
     //tmp configuration
     app.UseSwagger();
@@ -61,7 +61,7 @@ if (app.Environment.IsProduction())
         });
     });
 
-}
+//}
 
 
 app.UseHttpsRedirection();
