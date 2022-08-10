@@ -24,7 +24,7 @@ namespace fluidXtoresApi.Controllers
 
         // GET: api/Category/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<Category>> GetCategory(long id)
+        public async Task<ActionResult<Category>> GetCategory(int id)
         {
             var category = await _context.Category.FindAsync(id);
 
@@ -39,7 +39,7 @@ namespace fluidXtoresApi.Controllers
         // PUT: api/Category/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutCategory(long id, Category category)
+        public async Task<IActionResult> PutCategory(int id, Category category)
         {
             if (id != category.Id)
             {
@@ -82,7 +82,7 @@ namespace fluidXtoresApi.Controllers
 
         // DELETE: api/Category/5
         [HttpDelete("{id}")]
-        public async Task<IActionResult> Deletecategory(long id)
+        public async Task<IActionResult> Deletecategory(int id)
         {
             var category = await _context.Category.FindAsync(id);
             if (category == null)
@@ -96,7 +96,7 @@ namespace fluidXtoresApi.Controllers
             return NoContent();
         }
 
-        private bool CategoryExists(long id)
+        private bool CategoryExists(int id)
         {
             return _context.Category.Any(e => e.Id == id);
         }
