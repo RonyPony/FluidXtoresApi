@@ -12,7 +12,8 @@ builder.Services.AddCors();
 builder.Services.AddDbContext<fluidContext>(opt =>
 {
     //opt.UseInMemoryDatabase("users");
-    opt.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnections"));
+    //opt.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnections"));
+    opt.UseNpgsql(builder.Configuration.GetConnectionString("postgres"));
 });
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();

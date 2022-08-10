@@ -1576,3 +1576,5 @@ C:/proyectos/FluidXtoresApi/fluidXtoresApi/obj/Debug/net6.0/ref/fluidXtoresApi.d
 /Users/rony/projects/FluidXtoresApi/fluidXtoresApi/obj/Debug/net6.0/fluidXtoresApi.pdb
 /Users/rony/projects/FluidXtoresApi/fluidXtoresApi/obj/Debug/net6.0/fluidXtoresApi.genruntimeconfig.cache
 /Users/rony/projects/FluidXtoresApi/fluidXtoresApi/obj/Debug/net6.0/ref/fluidXtoresApi.dll
+/Users/rony/projects/FluidXtoresApi/fluidXtoresApi/bin/Debug/net6.0/Npgsql.dll
+/Users/rony/projects/FluidXtoresApi/fluidXtoresApi/bin/Debug/net6.0/Npgsql.EntityFrameworkCore.PostgreSQL.dll

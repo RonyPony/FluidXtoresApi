@@ -72,8 +72,8 @@ namespace fluidXtoresApi.Controllers
         [HttpPost]
         public async Task<ActionResult<Category>> Postcategory(Category category)
         {
-            category.CreatedDate = DateTime.Now;
-            category.UpdatedDate= DateTime.Now;
+            category.CreatedDate = DateTime.UtcNow;
+            category.UpdatedDate= DateTime.UtcNow;
             _context.Category.Add(category);
             await _context.SaveChangesAsync();
 

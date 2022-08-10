@@ -79,8 +79,8 @@ namespace fluidXtoresApi.Controllers
         [HttpPost]
         public async Task<ActionResult<User>> PostUser(User user)
         {
-            user.LastLoginDate = DateTime.Now;
-            user.UserRegisterDate = DateTime.Now;
+            user.LastLoginDate = DateTime.UtcNow;
+            user.UserRegisterDate = DateTime.UtcNow;
             _context.Users.Add(user);
             await _context.SaveChangesAsync();
 
@@ -106,7 +106,7 @@ namespace fluidXtoresApi.Controllers
                 }
                 if (userInfo.UserPassword == user.UserPassword)
                 {
-                    userInfo.LastLoginDate = DateTime.Now;
+                    userInfo.LastLoginDate = DateTime.UtcNow;
 
                     _context.Users.Update(userInfo);
                     await _context.SaveChangesAsync();
