@@ -1,28 +1,29 @@
 ﻿<Properties StartupConfiguration="{B97989FB-2D1D-4C6B-B81B-713FD335E4A5}|Default">
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore>
-      <Breakpoint file="/Users/ronel/Documents/proyectos/FluidXtoresApi/fluidXtoresApi/Controllers/UsersController.cs" relfile="fluidXtoresApi/Controllers/UsersController.cs" line="94" column="1" />
-    </BreakpointStore>
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.ItemProperties.fluidXtoresApi PreferredExecutionTarget="/Applications/Safari.app" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workbench ActiveDocument="fluidXtoresApi/Controllers/UsersController.cs">
     <Files>
-      <File FileName="fluidXtoresApi/Controllers/UsersController.cs" Line="101" Column="48" />
-      <File FileName="fluidXtoresApi/appsettings.json" Line="1" Column="1" />
-      <File FileName="fluidXtoresApi/Program.cs" Line="15" Column="1" />
+      <File FileName="fluidXtoresApi/Controllers/UsersController.cs" Line="111" Column="38" />
+      <File FileName="fluidXtoresApi/appsettings.json" Line="4" Column="14" />
+      <File FileName="fluidXtoresApi/Program.cs" Line="34" Column="1" />
       <File FileName="fluidXtoresApi/Models/fluidContext.cs" Line="7" Column="1" />
-      <File FileName="fluidXtoresApi/Models/User.cs" Line="8" Column="22" />
+      <File FileName="fluidXtoresApi/Models/User.cs" Line="10" Column="19" />
+      <File FileName="fluidXtoresApi/Controllers/CategoryController.cs" Line="39" Column="31" />
+      <File FileName="fluidXtoresApi/Controllers/WeatherForecastController.cs" Line="23" Column="10" />
+      <File FileName="fluidXtoresApi/Properties/launchSettings.json" Line="15" Column="30" />
+      <File FileName="fluidXtoresApi/Properties/PublishProfiles/FolderProfile.pubxml" Line="11" Column="27" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="fluidXtoresApi" expanded="True">
             <Node name="fluidXtoresApi" expanded="True">
-              <Node name="Controllers" expanded="True">
-                <Node name="UsersController.cs" selected="True" />
-              </Node>
+              <Node name="Controllers" expanded="True" />
               <Node name="Models" expanded="True" />
+              <Node name="Properties" expanded="True">
+                <Node name="PublishProfiles" expanded="True" />
+              </Node>
             </Node>
           </Node>
         </State>
@@ -32,6 +33,12 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.fluidXtoresApi PreferredExecutionTarget="/Applications/Safari.app" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/rony/projects/FluidXtoresApi/fluidXtoresApi/Controllers/UsersController.cs" relfile="fluidXtoresApi/Controllers/UsersController.cs" line="95" column="1" />
+      <Breakpoint file="/Users/rony/projects/FluidXtoresApi/fluidXtoresApi/Controllers/CategoryController.cs" relfile="fluidXtoresApi/Controllers/CategoryController.cs" line="44" column="1" />
+      <Breakpoint file="/Users/rony/projects/FluidXtoresApi/fluidXtoresApi/Controllers/UsersController.cs" relfile="fluidXtoresApi/Controllers/UsersController.cs" line="105" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
 </Properties>

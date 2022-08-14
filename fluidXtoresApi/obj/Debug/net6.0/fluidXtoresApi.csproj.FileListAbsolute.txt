@@ -1578,3 +1578,5 @@ C:/proyectos/FluidXtoresApi/fluidXtoresApi/obj/Debug/net6.0/ref/fluidXtoresApi.d
 /Users/rony/projects/FluidXtoresApi/fluidXtoresApi/obj/Debug/net6.0/ref/fluidXtoresApi.dll
 /Users/rony/projects/FluidXtoresApi/fluidXtoresApi/bin/Debug/net6.0/Npgsql.dll
 /Users/rony/projects/FluidXtoresApi/fluidXtoresApi/bin/Debug/net6.0/Npgsql.EntityFrameworkCore.PostgreSQL.dll
+/Users/rony/projects/FluidXtoresApi/fluidXtoresApi/bin/Debug/net6.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll
+/Users/rony/projects/FluidXtoresApi/fluidXtoresApi/bin/Debug/net6.0/Microsoft.IdentityModel.Abstractions.dll
