@@ -88,6 +88,7 @@ namespace fluidXtoresApi.Controllers
         {
             user.LastLoginDate = DateTime.UtcNow;
             user.UserRegisterDate = DateTime.UtcNow;
+            user.UserEmail = user.UserEmail.Trim().ToLower().Replace(" ","");
             _context.Users.Add(user);
             await _context.SaveChangesAsync();
 
