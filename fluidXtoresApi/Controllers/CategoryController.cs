@@ -32,8 +32,16 @@ namespace fluidXtoresApi.Controllers
             {
                 return NotFound();
             }
-
-            return category;
+            if (!category.deleted)
+            {
+                return category;
+            }
+            else
+            {
+                NotFound();
+            }
+            return NotFound();
+            
         }
 
         // PUT: api/Category/5
@@ -72,8 +80,10 @@ namespace fluidXtoresApi.Controllers
         [HttpPost]
         public async Task<ActionResult<Category>> Postcategory(Category category)
         {
-            category.CreatedDate = DateTime.UtcNow;
-            category.UpdatedDate= DateTime.UtcNow;
+            category.createdOnUtc = DateTime.UtcNow.ToString();
+            category.updatedOnUtc= DateTime.UtcNow.ToString();
+            category.deleted = false;
+            
             _context.Category.Add(category);
             await _context.SaveChangesAsync();
 

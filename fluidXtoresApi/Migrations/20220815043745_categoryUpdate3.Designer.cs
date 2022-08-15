@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 using fluidXtoresApi.Models;
@@ -12,9 +13,10 @@ using fluidXtoresApi.Models;
 namespace fluidXtoresApi.Migrations
 {
     [DbContext(typeof(fluidContext))]
-    partial class fluidContextModelSnapshot : ModelSnapshot
+    [Migration("20220815043745_categoryUpdate3")]
+    partial class categoryUpdate3
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
